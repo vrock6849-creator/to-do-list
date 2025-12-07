@@ -1,0 +1,144 @@
+
+/* ------------------------------
+   GLOBAL / PAGE STYLES
+------------------------------*/
+body {
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  margin: 0;
+  padding: 30px;
+  background: #f6fbff;
+  display: flex;
+  justify-content: center;
+}
+
+/* Main wrapper */
+.wrap {
+  width: 100%;
+  max-width: 450px;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 8px 30px rgba(10, 20, 40, 0.08);
+  border: 1px solid rgba(15, 30, 70, 0.04);
+}
+
+/* ------------------------------
+   HEADINGS
+------------------------------*/
+h1 {
+  font-size: 44px;
+  text-align: center;
+  margin: 0 0 20px 0;
+  color: #111;
+}
+
+.section-title {
+  font-size: 22px;
+  margin-top: 16px;
+  font-weight: 600;
+  color: #4c5c6f;
+}
+
+.section-title .strong {
+  font-weight: 800;
+  color: #111;
+}
+
+/* ------------------------------
+   INPUT AREA
+------------------------------*/
+.create-box {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.task-input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #d1e6ff;
+  font-size: 16px;
+  outline: none;
+}
+
+.controls-row {
+  display: flex;
+  justify-content: start;
+}
+
+.add-btn {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 10px;
+  background: #2b6ef6;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ------------------------------
+   TASK LIST AREA
+------------------------------*/
+.list {
+  margin-top: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-height: 320px;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+/* Single task card */
+.task-item {
+  background: #eaf6ff;
+  border-left: 6px solid #0e7ac7;
+  padding: 12px;
+  border-radius: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  box-shadow: 0 6px 12px rgba(12, 28, 56, 0.05);
+}
+
+.task-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+}
+
+.task-text {
+  font-size: 17px;
+  color: #0b1220;
+}
+
+.task-text.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.task-checkbox input {
+  width: 18px;
+  height: 18px;
+}
+
+/* Delete button */
+.trash-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.trash-btn svg {
+  opacity: 0.85;
+}

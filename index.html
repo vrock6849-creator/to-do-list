@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>To-Do List App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Todos</title>
+
+  <!-- link to stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <h1>Todos</h1>
+
+    <div class="create-section">
+      <div class="section-title"><span class="strong">Create</span> Task</div>
+      <div class="create-box">
+        <input id="taskInput" class="task-input" placeholder="Type a task (e.g. Learn HTML)" />
+        <div class="controls-row">
+          <button id="addBtn" class="add-btn">Add</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="tasks-section">
+      <div class="section-title"><span class="strong">My</span> Tasks</div>
+      <div id="list" class="list" aria-live="polite"></div>
+    </div>
+  </div>
+
+
+ <script src="script.js"></script>
+</body>
+</html>
